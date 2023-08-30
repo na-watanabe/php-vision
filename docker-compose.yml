@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  php:
+    build: ./.docker
+    environment:
+      - TZ=Asia/Tokyo
+    volumes:
+      - ./:/home/user/works
+    working_dir: /home/user/works
